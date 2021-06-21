@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/KennyNova.github.io/static/css/main.cc2a2573.chunk.css",
-    "main.js": "/KennyNova.github.io/static/js/main.1a6f20f4.chunk.js",
-    "main.js.map": "/KennyNova.github.io/static/js/main.1a6f20f4.chunk.js.map",
+    "main.css": "/KennyNova.github.io/static/css/main.c005dfcf.chunk.css",
+    "main.js": "/KennyNova.github.io/static/js/main.4399950f.chunk.js",
+    "main.js.map": "/KennyNova.github.io/static/js/main.4399950f.chunk.js.map",
     "runtime-main.js": "/KennyNova.github.io/static/js/runtime-main.2e7b9ab9.js",
     "runtime-main.js.map": "/KennyNova.github.io/static/js/runtime-main.2e7b9ab9.js.map",
     "static/js/2.48a54330.chunk.js": "/KennyNova.github.io/static/js/2.48a54330.chunk.js",
@@ -10,13 +10,17 @@
     "static/js/3.aaafd304.chunk.js": "/KennyNova.github.io/static/js/3.aaafd304.chunk.js",
     "static/js/3.aaafd304.chunk.js.map": "/KennyNova.github.io/static/js/3.aaafd304.chunk.js.map",
     "index.html": "/KennyNova.github.io/index.html",
-    "static/css/main.cc2a2573.chunk.css.map": "/KennyNova.github.io/static/css/main.cc2a2573.chunk.css.map",
-    "static/js/2.48a54330.chunk.js.LICENSE.txt": "/KennyNova.github.io/static/js/2.48a54330.chunk.js.LICENSE.txt"
+    "static/css/main.c005dfcf.chunk.css.map": "/KennyNova.github.io/static/css/main.c005dfcf.chunk.css.map",
+    "static/js/2.48a54330.chunk.js.LICENSE.txt": "/KennyNova.github.io/static/js/2.48a54330.chunk.js.LICENSE.txt",
+    "static/media/chatapp.731b8d58.png": "/KennyNova.github.io/static/media/chatapp.731b8d58.png",
+    "static/media/contactapp.58e0c72b.png": "/KennyNova.github.io/static/media/contactapp.58e0c72b.png",
+    "static/media/pokedex.858194aa.png": "/KennyNova.github.io/static/media/pokedex.858194aa.png",
+    "static/media/weatherapp.f8058001.png": "/KennyNova.github.io/static/media/weatherapp.f8058001.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2e7b9ab9.js",
     "static/js/2.48a54330.chunk.js",
-    "static/css/main.cc2a2573.chunk.css",
-    "static/js/main.1a6f20f4.chunk.js"
+    "static/css/main.c005dfcf.chunk.css",
+    "static/js/main.4399950f.chunk.js"
   ]
 }
