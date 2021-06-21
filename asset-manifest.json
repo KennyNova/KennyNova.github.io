@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/KennyNova.github.io/static/css/main.cc2a2573.chunk.css",
+    "main.js": "/KennyNova.github.io/static/js/main.1a6f20f4.chunk.js",
+    "main.js.map": "/KennyNova.github.io/static/js/main.1a6f20f4.chunk.js.map",
+    "runtime-main.js": "/KennyNova.github.io/static/js/runtime-main.2e7b9ab9.js",
+    "runtime-main.js.map": "/KennyNova.github.io/static/js/runtime-main.2e7b9ab9.js.map",
+    "static/js/2.48a54330.chunk.js": "/KennyNova.github.io/static/js/2.48a54330.chunk.js",
+    "static/js/2.48a54330.chunk.js.map": "/KennyNova.github.io/static/js/2.48a54330.chunk.js.map",
+    "static/js/3.aaafd304.chunk.js": "/KennyNova.github.io/static/js/3.aaafd304.chunk.js",
+    "static/js/3.aaafd304.chunk.js.map": "/KennyNova.github.io/static/js/3.aaafd304.chunk.js.map",
+    "index.html": "/KennyNova.github.io/index.html",
+    "static/css/main.cc2a2573.chunk.css.map": "/KennyNova.github.io/static/css/main.cc2a2573.chunk.css.map",
+    "static/js/2.48a54330.chunk.js.LICENSE.txt": "/KennyNova.github.io/static/js/2.48a54330.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2e7b9ab9.js",
+    "static/js/2.48a54330.chunk.js",
+    "static/css/main.cc2a2573.chunk.css",
+    "static/js/main.1a6f20f4.chunk.js"
+  ]
+}
