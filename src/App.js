@@ -11,21 +11,38 @@ function App() {
   const page3 = useRef(null)
   const page4 = useRef(null)
 
+  const isBrowser = typeof window !== `undefined`
+
   function scroll(page){
     page.current.scrollIntoView({ block: 'end', behavior: 'smooth' })
   }
 
+  function getScrollPosition({ element, useWindow }) {
+    if (!isBrowser) return { x: 0, y: 0 }
+  
+    const target = element ? element.current : document.body
+    const position = target.getBoundingClientRect()
+  
+    return useWindow
+      ? { x: window.scrollX, y: window.scrollY }
+      : { x: position.left, y: position.top }
+  }
+
+  useEffect(() => {
+    getScrollPosition()
+  });
+
   return (
     <div className="main-window bg-gradient-to-b from-purple-600 to-blue-800 ">
-      <span className="fixed text-gray-200 pt-10 grid grid-flow-col auto-cols-auto justify-items-center w-full " >
+      <span className="fixed text-gray-200 pt-10 grid grid-flow-col auto-cols-auto justify-items-center w-full z-50" >
         <p className="link float-left" onClick={() => { scroll(page1) }}>about me</p>
         <p className="link float-left" onClick={() => { scroll(page2) }}>projects</p>
         <p className="link float-left" onClick={() => { scroll(page3) }}>contact</p>
         <p className="link float-left" onClick={() => { scroll(page4) }}>other</p>
       </span>
       <ul>
-        <li ref={page1} className="about-me justify-items-center grid grid-flow-col auto-cols-auto">about me
-            <img className="mt-64 max-w-sm max-h-sm" src="https://pngimg.com/uploads/face/face_PNG5645.png" />
+        <li ref={page1} className="about-me justify-items-center grid grid-flow-col auto-cols-auto">
+            <img className="mt-64 mr-4 ml-4 max-w-sm max-h-sm" src="https://pngimg.com/uploads/face/face_PNG5645.png" />
             <span className="about-me mt-80 mr-4">
               My name is Filippo Rossi. I write code and make stuff.Currently studing CS at the University of Trento.
               I like to experiment with new technologies, creating things that I then use on a daily basis. I am active in the open source community
