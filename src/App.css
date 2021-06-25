@@ -2,19 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+ul{
+  margin:0;
+  padding:0;
+}
+
+li {
+  margin: 0;
+  height: 100vh;
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+  scroll-snap-align: start;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
 .main-window{
-  flex-basis: 50%;
   max-height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
-.about-me{
+.page1{
   overflow: hidden;
+  margin: 0 50px 0 50px;
 }
 
 .page2{
   margin: 0 50px 0 50px;
+}
+
+.all-projects{
+  max-height: 90%;
 }
 
 .project{
@@ -25,9 +46,10 @@
 }
 
 .project-img{
+  object-fit: cover;
   left:50%;
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   border-radius: 0 0 10px 10px;
 }
 
@@ -42,6 +64,7 @@
   transform: translate(-50%, -50%);
   transition: all .3s ease-in-out;
   background: rgba(0, 0, 0, 0);
+  border-radius: 0 0 10px 10px;
 }
 
 .project-desc:hover{
@@ -74,10 +97,10 @@
   content: '';
   display: block;
   position: absolute;
-  top: 100%;
+  top: 75%;
   height: 3px;
   width: 100%;
-  background-color: #00bcd4;
+  background-color: #1D9588;
   -webkit-transform-origin: center top;
   transform-origin: center top;
   -webkit-transform: scale(0, 1);
@@ -88,7 +111,7 @@
 }
 
 .link:active::before {
-  background-color: #00bcd4;
+  background-color: #1D9588;
 }
 
 .link:hover::before,
@@ -98,21 +121,3 @@
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-
-ul{
-  margin:0;
-  padding:0;
-}
-
-li {
-  margin: 0;
-  height: 100vh;
-  font-size: 1.4rem;
-  color: white;
-  text-align: center;
-  scroll-snap-align: start;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-}
-
