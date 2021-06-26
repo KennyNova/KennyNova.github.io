@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Stars } from './components/Stars.js';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App/>
+    <Stars />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
