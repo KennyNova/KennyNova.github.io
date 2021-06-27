@@ -71,19 +71,19 @@ function App() {
               </div>
             </div>
         </li>
-        <li className="page3 ml-10 sm:ml-0" ref={page3}>
-          <div className="contact ">
-            <a className="github-button inline-block mr-10" href="https://github.com/KennyNova" target="_blank" rel="noopener noreferrer">
+        <li className="page3 pt-10 ml-10 sm:ml-0" ref={page3}>
+          <div className="grid auto-cols-auto md:grid-cols-3">
+            <a className="github-button inline-block m-auto" href="https://github.com/KennyNova" target="_blank" rel="noopener noreferrer">
               <img className="contact-image float-left w-8 mr-5 " src={github} alt="github-icon" />
               GitHub
               <p className="subtext">(Click to visit)</p>
             </a>
-            <a className="email-button inline-block mr-10 " onClick={() => { navigator.clipboard.writeText("navidmadani4598@gmail.com") }}>
+            <a className="email-button inline-block text-base mt-10 md:m-auto " onClick={() => { navigator.clipboard.writeText("navidmadani4598@gmail.com") }}>
               <img className="contact-image float-left w-8 mr-5 " src={email} alt="email-icon" />
               NavidMadani4598@gmail.com
               <p className="subtext">(Click to copy to clipboard)</p>
             </a>
-            <a className="phone-button inline-block" href="tel:4047045778">
+            <a className="phone-button inline-block mt-10 md:m-auto" href="tel:4047045778">
               <img className="contact-image float-left w-8 mr-5" src={phone} alt="phone-icon" />
               404-704-5778
               <p className="subtext">(Click to call)</p>
