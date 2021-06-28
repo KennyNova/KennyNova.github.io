@@ -8,7 +8,7 @@ import { Stars } from './components/Stars.js';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Stars />
+    <Stars/>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
