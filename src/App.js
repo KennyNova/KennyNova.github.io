@@ -1,5 +1,6 @@
 import './App.css';
 import { useRef } from 'react';
+import { Slideshow } from './components/Slideshow.js';
 import weatherApp from './images/weatherapp.png'
 import pokedex from './images/pokedex.png'
 import contactapp from './images/contactapp.png'
@@ -104,7 +105,7 @@ function App() {
           </div>
         </li>
         <li className="page4" ref={page4}>
-          other
+          <Slideshow />
         </li>
       </ul>
       </div>
