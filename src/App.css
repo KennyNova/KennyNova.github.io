@@ -130,11 +130,12 @@ li {
   width:100%;
 }
 
-.contact{
+.githubimg{
+  filter: invert(100%);
 }
 
 .github-button{
-  border: 5px black solid;
+  background: black;
   border-radius: 10px;
   padding: 1.5rem 2.5rem 1.5rem 2.5rem;
   box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
@@ -145,8 +146,8 @@ li {
 }
 
 .email-button{
+  background: #BB001B;
   cursor: pointer;
-  border: 5px #BB001B solid;
   border-radius: 10px;
   padding: 1.5rem 1.5rem 1.5rem 1.5rem;
   box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
@@ -157,8 +158,8 @@ li {
 }
 
 .phone-button{
+  background: #10B981;
   cursor: pointer;
-  border: 5px #43eb34 solid;
   border-radius: 10px;
   padding: 1.5rem 2.5rem 1.5rem 2.5rem;
   box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
