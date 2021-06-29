@@ -91,7 +91,7 @@ function App() {
               GitHub
               <p className="subtext">(Click to visit)</p>
             </a>
-            <a className="email-button inline-block text-base mt-10 md:m-auto w-96 " onClick={() => { navigator.clipboard.writeText("navidmadani4598@gmail.com") }}>
+            <a className="email-button inline-block text-base mt-10 md:m-auto  md:w-auto lg:w-96 " onClick={() => { navigator.clipboard.writeText("navidmadani4598@gmail.com") }}>
               <img className="contact-image float-left w-8 mr-5 " src={email} alt="email-icon" />
               NavidMadani4598@gmail.com
               <p className="subtext">(Click to copy to clipboard)</p>
