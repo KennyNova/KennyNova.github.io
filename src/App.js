@@ -40,16 +40,25 @@ function App() {
               <div className="project">
                 <img className="project-img" src={weatherApp} alt="weather-app-img"/>
                 <a href="https://github.com/KennyNova/React-Weather-App" target="_blank" rel="noopener noreferrer">
-                  <div className="project-desc">
-                    this is Weather App
-                  </div>
+                <div className="project-desc">
+                  <p className="m-5 leading-loose">
+                    I created this weather app using react. I went into creating this app with the intention of learning how
+                    to use an api. I learned how to use fetch to pull information from the api, and learned a lot from styling 
+                    the frontend. I was then able to use this knowledge in other apps.
+                  </p>
+                </div>
                 </a>
               </div>
               <div className=" project">
                 <img className="project-img" src={pokedex} alt="pokedex-img"/>
                 <a href="https://github.com/KennyNova/Pokedex" target="_blank" rel="noopener noreferrer">
                   <div className="project-desc">
-                    this is Pokedex
+                    <p className="m-5 leading-loose">
+                    When creating this Pokedex it was the first time I had ever used NextJS and Tailwind. Tailwind
+                    made styling the frontend much easier and made my workflow much more simpler. I learned how to break down my
+                    code into componenets and how to use NextJS's way to fetch data. 
+
+                    </p>
                   </div>
                 </a>
               </div>
