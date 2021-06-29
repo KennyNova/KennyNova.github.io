@@ -11,7 +11,7 @@
 .toggle{
     position: fixed;
     z-index: 30;
-    background: #1D9588;
+    background: rgba(29, 149, 136, .8);
     bottom: 0;
     right: 0;
     margin: 0 .5rem .5rem 0;
