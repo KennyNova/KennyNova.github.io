@@ -5,12 +5,10 @@ import Particles from 'react-particles-js';
 export const Stars = (props) => {
     const [enable, setEnable] = useState(true)
 
-    
-
     return (
         <div>
             <div className="toggle">
-                <label for="toggle" class="text-xs text-gray-700 mr-5 text-gray-50">Background</label>
+                <label for="toggle" class="text-xs text-white mr-5">Background</label>
                 <div class="relative inline-block w-10 mr-2 align-middle select-none ">
                     <input type="checkbox" onClick={(e) => setEnable(!enable)} name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
                     <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-green-400 border-green-400 cursor-pointer"></label>
