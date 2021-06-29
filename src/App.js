@@ -30,9 +30,10 @@ function App() {
         <li ref={page1} className="page1 pt-10">
           <p className="float-left text-base md:text-3xl">
           <img className="image float-left w-20 md:w-52" src="https://pngimg.com/uploads/face/face_PNG5645.png" alt="profile-img" />
-            My name is Filippo Rossi. I write code and make stuff.Currently studing CS at the University of Trento.
-            I like to experiment with new technologies, creating things that I then use on a daily basis. I am active in the open source community
-            and I love bringing people toghether through technology.I also love game development and game jams as a collaborative challenge for me and my friends.
+            My name is Navid Madani. I am currently a CS student and Georgia State University. I've have always enjoyed learning
+            about new technologies and implementing them into my day to day life. I aspire to become a Full Stack developer as I love
+            working in both the frontend and backend. I am working everyday to achive this goal by learning as much as I can and then
+            using that knowledge to create apps.
           </p>
         </li>
         <li className="page2 pt-10" ref={page2}>
@@ -52,21 +53,24 @@ function App() {
               <div className=" project">
                 <img className="project-img" src={pokedex} alt="pokedex-img"/>
                 <a href="https://github.com/KennyNova/Pokedex" target="_blank" rel="noopener noreferrer">
-                  <div className="project-desc">
-                    <p className="m-5 leading-loose">
-                    When creating this Pokedex it was the first time I had ever used NextJS and Tailwind. Tailwind
-                    made styling the frontend much easier and made my workflow much more simpler. I learned how to break down my
-                    code into componenets and how to use NextJS's way to fetch data. 
+                <div className="project-desc">
+                  <p className="m-5 leading-loose">
+                  When creating this Pokedex it was the first time I had ever used NextJS and Tailwind. Tailwind
+                  made styling the frontend much easier and made my workflow much more simpler. I learned how to break down my
+                  code into componenets and how to use NextJS's way to fetch data. 
 
-                    </p>
-                  </div>
+                  </p>
+                </div>
                 </a>
               </div>
               <div className=" project">
                 <img className="project-img" src={chatapp} alt="chat-app-img"/>
                 <a href="https://github.com/KennyNova/messaging-app-socket.io" target="_blank" rel="noopener noreferrer"> 
-                  <div className="project-desc">
-                    this is Socket.io chat app
+                <div className="project-desc">
+                  <p className="m-5 leading-loose">
+                    Creating this chat app was a difficult but very rewarding task. I have learned so much from using Socket.io and am
+                    confident in my ability to use it. I had also learned how to create my own and connect a postgres database to my app.
+                  </p>
                   </div>
                 </a>
               </div>
