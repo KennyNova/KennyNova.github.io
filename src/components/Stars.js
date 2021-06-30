@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../styles/stars.css'
+import '../styles/tailwind.css';
 import Particles from 'react-particles-js';
 
 export const Stars = (props) => {

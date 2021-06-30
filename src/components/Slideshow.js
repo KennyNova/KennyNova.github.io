@@ -1,4 +1,5 @@
 import '../styles/slideshow.css'
+import '../styles/tailwind.css';
 import React, { useEffect, useState } from 'react';
 import boat from '../images/slideshow/boat.jpg'
 import duck from '../images/slideshow/duck.jpg'
