@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-div{
+  position: relative;
+  width:100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slideshow-wrapper{
+  width:100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index:0;
+  text-align:center;
+  margin: auto;
+}
+.slideshow-wrapper img {
+  display: inline-block;
+  position:absolute;
+  width: auto;
+  max-width: 75%;
+  height: auto;
+  max-height: 75%;
+  z-index:0;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.button{
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+}
+
+.right{
+  right: 0;
+  padding-left: 5rem;
+}
+
+.left{
+  left: 0;
+  padding-right: 5rem;
+}
+
+.fade-out{  
+  animation: fadeOut ease 5s forwards;
+}
+
+.fade-in{
+  animation: fadeIn ease 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}

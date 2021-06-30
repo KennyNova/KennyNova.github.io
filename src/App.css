@@ -78,12 +78,14 @@ li {
 .page1{
   overflow: hidden;
   position: relative;
-  margin: 0 50px 0 50px;
+  width: 100%;
+  padding: 0 50px 0 50px;
 }
 
 .page2{
   position: relative;
-  margin: 0 50px 0 50px;
+  width: 100%;
+  padding: 0 50px 0 50px;
 }
 
 .all-projects{
@@ -175,5 +177,7 @@ li {
 }
 
 .page4{
+  margin: 0 50px 0 0;
   position: relative;
+  width:100%;
 }

@@ -1,5 +1,6 @@
 import './App.css';
 import { useRef } from 'react';
+import { Slideshow } from './components/Slideshow.js';
 import weatherApp from './images/weatherapp.png'
 import pokedex from './images/pokedex.png'
 import contactapp from './images/contactapp.png'
@@ -24,7 +25,7 @@ function App() {
         <p className="pointer-events-auto link float-left" onClick={() => { scroll(page1) }}>about me</p>
         <p className="pointer-events-auto link float-left" onClick={() => { scroll(page2) }}>projects</p>
         <p className="pointer-events-auto link float-left" onClick={() => { scroll(page3) }}>contact</p>
-        <p className="pointer-events-auto link float-left" onClick={() => { scroll(page4) }}>other</p>
+        <p className="pointer-events-auto link float-left" onClick={() => { scroll(page4) }}>Photography</p>
       </span>
       <ul>
         <li ref={page1} className="page1 pt-10">
@@ -104,7 +105,7 @@ function App() {
           </div>
         </li>
         <li className="page4" ref={page4}>
-          other
+          <Slideshow />
         </li>
       </ul>
       </div>
