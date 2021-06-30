@@ -1,14 +1,15 @@
-import './App.css';
+import './styles/App.css';
+import './styles/tailwind.css';
 import { useRef } from 'react';
 import { Slideshow } from './components/Slideshow.js';
-import profile from './images/profile.jpg'
-import weatherApp from './images/weatherapp.png'
-import pokedex from './images/pokedex.png'
-import contactapp from './images/contactapp.png'
-import chatapp from './images/chatapp.png'
-import github from './images/github_icon.png'
-import email from './images/email_icon.png'
-import phone from './images/phone_icon.png'
+import { Aboutme } from './components/Aboutme.js'
+import weatherApp from './images/projects/weatherapp.png'
+import pokedex from './images/projects/pokedex.png'
+import contactapp from './images/projects/contactapp.png'
+import chatapp from './images/projects/chatapp.png'
+import github from './images/icons/github_icon.png'
+import email from './images/icons/email_icon.png'
+import phone from './images/icons/phone_icon.png'
 
 function App() {
   const page1 = useRef(null)
@@ -30,13 +31,14 @@ function App() {
       </span>
       <ul>
         <li ref={page1} className="page1 pt-10">
-          <p className="float-left text-base md:text-3xl">
+          {/* <p className="float-left text-base md:text-3xl">
             <img className="image float-left w-20 md:w-52" src={profile} alt="profile-img" />
             My name is Navid Madani. I am currently a CS student at Georgia State University. I've have always enjoyed learning
            about new technologies and implementing them into my day to day life. I aspire to become a Full Stack developer as I love
            working in both the frontend and backend. I am working everyday to achieve this goal by learning as much as I can and then
            using that knowledge to create apps.
-          </p>
+          </p> */}
+          <Aboutme />
         </li>
         <li className="page2 pt-10" ref={page2}>
             <div className="all-projects grid grid-rows-2 grid-flow-col gap-4">
