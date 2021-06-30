@@ -12,7 +12,7 @@ import wheat from '../images/slideshow/wheat.jpg'
 export const Slideshow = (props) => {
     const allImages = [boat, duck, flowers, garden, statue, vanny, vannyprofile, wheat]
     var [index, setIndex] = useState(0)
-    var [prevIndex, setPrevIndex] = useState(0)
+    var [prevIndex, setPrevIndex] = useState(7)
     const prevJsx = <img className="fade-out" key={prevIndex} src={allImages[prevIndex]}></img>
     const jsx = <img className="fade-in" key={index} src={allImages[index]}></img>
 
@@ -22,13 +22,13 @@ export const Slideshow = (props) => {
     }, [index])
 
     return (
-        <div className="main-div">
-            <a className="button float-left" onClick={() => { setPrevIndex(index); setIndex(index - 1) }}>left</a>
+        <div className="main-div" {...props}>
+            <a className="button left text-7xl" onClick={() => { setPrevIndex(index); setIndex(index - 1) }}>&lt;</a>
             <div className="slideshow-wrapper">
                 {prevJsx}
                 {jsx}
             </div>
-            <a className="button float-right" onClick={() => { setPrevIndex(index); setIndex(index + 1)}}>right</a>
+            <a className="button right text-7xl" onClick={() => { setPrevIndex(index); setIndex(index + 1)}}>&gt;</a>
         </div>
     )
 }

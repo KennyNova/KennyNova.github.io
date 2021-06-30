@@ -177,5 +177,7 @@ li {
 }
 
 .page4{
+  margin: 0 50px 0 0;
   position: relative;
+  width:100%;
 }

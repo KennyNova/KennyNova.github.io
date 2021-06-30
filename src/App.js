@@ -25,7 +25,7 @@ function App() {
         <p className="pointer-events-auto link float-left" onClick={() => { scroll(page1) }}>about me</p>
         <p className="pointer-events-auto link float-left" onClick={() => { scroll(page2) }}>projects</p>
         <p className="pointer-events-auto link float-left" onClick={() => { scroll(page3) }}>contact</p>
-        <p className="pointer-events-auto link float-left" onClick={() => { scroll(page4) }}>other</p>
+        <p className="pointer-events-auto link float-left" onClick={() => { scroll(page4) }}>Photography</p>
       </span>
       <ul>
         <li ref={page1} className="page1 pt-10">
