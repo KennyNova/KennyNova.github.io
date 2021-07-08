@@ -25,13 +25,13 @@ function App() {
         <p className="pointer-events-auto text-xs md:text-base link float-left" onClick={() => { scroll(page4) }}>Photography</p>
       </span>
       <ul>
-        <li ref={page1} className="page1 pt-10">
+        <li ref={page1} className="page1">
           <Aboutme />
         </li>
-        <li className="page2 pt-10" ref={page2}>
+        <li className="page2" ref={page2}>
             <Projects />
         </li>
-        <li className="page3 pt-10 ml-0 " ref={page3}>
+        <li className="page3" ref={page3}>
             <Contactbuttons />
         </li>
         <li className="page4" ref={page4}>
