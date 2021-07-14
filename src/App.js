@@ -1,7 +1,6 @@
 import './styles/App.css';
 import './styles/tailwind.css';
 import { useRef } from 'react';
-import { Slideshow } from './components/Slideshow.js';
 import { Aboutme } from './components/Aboutme.js';
 import { Projects } from './components/Projects.js';
 import { Contactbuttons } from './components/Contactbuttons.js';
@@ -22,20 +21,16 @@ function App() {
         <p className="pointer-events-auto text-xs md:text-base link float-left" onClick={() => { scroll(page1) }}>about me</p>
         <p className="pointer-events-auto text-xs md:text-base link float-left" onClick={() => { scroll(page2) }}>projects</p>
         <p className="pointer-events-auto text-xs md:text-base link float-left" onClick={() => { scroll(page3) }}>contact</p>
-        <p className="pointer-events-auto text-xs md:text-base link float-left" onClick={() => { scroll(page4) }}>Photography</p>
       </span>
       <ul>
-        <li ref={page1} className="page1">
+        <li className="page1" ref={page1}>
           <Aboutme />
         </li>
         <li className="page2" ref={page2}>
-            <Projects />
+          <Projects />
         </li>
         <li className="page3" ref={page3}>
-            <Contactbuttons />
-        </li>
-        <li className="page4" ref={page4}>
-          <Slideshow />
+          <Contactbuttons />
         </li>
       </ul>
       </div>
