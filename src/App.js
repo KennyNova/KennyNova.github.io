@@ -9,7 +9,6 @@ function App() {
   const page1 = useRef(null)
   const page2 = useRef(null)
   const page3 = useRef(null)
-  const page4 = useRef(null)
 
   function scroll(page){
     page.current.scrollIntoView({ block: 'end', behavior: 'smooth' })
