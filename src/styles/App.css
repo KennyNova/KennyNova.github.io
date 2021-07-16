@@ -1,173 +1,43 @@
-ul{
-  margin:0;
-  padding:0;
+:root{
+  --bg-color: #142129;
+  --primary-text-color: #F7DAD9;
+  --text-highlight-color: #957FEF;
 }
 
-li {
-  margin: 0;
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+  color: var(--primary-text-color);
+      width: 100%;
+    height: 100%;
+}
+
+h1{
+  color: var(--primary-text-color);
+  font-size: 20vh;
+  line-height: 1;
+  text-align: right;
+}
+
+.container{
+  width: 100vw;
+  max-width: 100vw;
   height: 100vh;
-  font-size: 1.4rem;
-  color: white;
-  text-align: center;
-  scroll-snap-align: start;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-}
-
-.link{
-  text-transform: uppercase;
-  text-decoration: none;
-  position: relative;
-  display: block;
-  padding: 16px 0;
-  margin: 0 12px;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  transition: color 0.1s, background-color 0.1s;
-  color: #FFF;
-  cursor: pointer;
-}
-
-.link:hover {
-  color: #000;
-}
-.link:focus, .link:active {
-  color: #FFF;
-}
-
-.link::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 75%;
-  height: 3px;
-  width: 100%;
-  background-color: #1D9588;
-  -webkit-transform-origin: center top;
-  transform-origin: center top;
-  -webkit-transform: scale(0, 1);
-  transform: scale(0, 1);
-  transition: color 0.1s, -webkit-transform 0.2s ease-out;
-  transition: color 0.1s, transform 0.2s ease-out;
-  transition: color 0.1s, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
-}
-
-.link:active::before {
-  background-color: #1D9588;
-}
-
-.link:hover::before,
-.link:focus::before {
-  -webkit-transform-origin: center top;
-  transform-origin: center top;
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);
-}
-
-.main-window{
   max-height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  background-color: var(--bg-color);
 }
 
-.page1{
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  padding: 0 3.125rem 0 3.125rem;
+.highlight{
+  color: var(--text-highlight-color);
 }
 
-.page2{
-  position: relative;
-  width: 100%;
-  padding: 0 50px 0 50px;
-}
-
-.all-projects{
-  max-height: 90%;
-}
-
-.project{
-  border-radius: 0 0 10px 10px;
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.project-img{
-  object-fit: cover;
-  left:50%;
-  width: 100%;
-  max-height: 100%;
-  border-radius: 0 0 10px 10px;
-}
-
-.project-desc{
-  position: absolute;
-  color: transparent;
-  width: 100%;
-  height: 100%;
-  top: 50%;
-  bottom: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: all .3s ease-in-out;
-  background: rgba(0, 0, 0, 0);
-  border-radius: 0 0 10px 10px;
-  overflow: scroll;
-}
-
-.project-desc:hover{
-  color: white;
-  background: rgba(0, 0, 0, .7);
-}
-
-.page3{
-  margin: 0 50px 0 0;
-  position: relative;
-  width:100%;
-}
-
-.githubimg{
-  filter: invert(100%);
-}
-
-.github-button{
-  background: black;
-  border-radius: 10px;
-  padding: 1.5rem 2.5rem 1.5rem 2.5rem;
-  box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
-}
-
-.github-button:active{
-    box-shadow:inset 0 0.6em 2em -0.3em rgba(0,0,0,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
-}
-
-.email-button{
-  background: #BB001B;
-  cursor: pointer;
-  border-radius: 10px;
-  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-  box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
-}
-
-.email-button:active{
-    box-shadow:inset 0 0.6em 2em -0.3em rgba(0,0,0,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
-}
-
-.resume-button{
-  background: #10B981;
-  cursor: pointer;
-  border-radius: 10px;
-  padding: 1.5rem 2.5rem 1.5rem 2.5rem;
-  box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
-}
-
-.resume-button:active{
-    box-shadow:inset 0 0.6em 2em -0.3em rgba(0,0,0,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
-}
-
-.subtext{
-  font-size: 0.75rem;
+.intro{
+  width: min-content;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow:hidden;
+  float: right;
 }
