@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './styles/index.css';
 import './styles/tailwind.css';
 import App from './App';
-import { Construction } from './components/Construction.js'
+import { Construction } from './Construction.js'
 import { Stars } from './components/Stars.js';
 
 
