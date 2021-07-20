@@ -5,26 +5,53 @@
 }
 
 html {
-    width: 100%;
-    height: 100%;
+    scroll-behavior: smooth;
+    max-width:100vw;
 }
 
 body{
   color: var(--primary-text-color);
-      width: 100%;
-    height: 100%;
 }
 
 h1{
   color: var(--primary-text-color);
   font-size: 20vh;
-  line-height: 1;
+  line-height: 20vh;
   text-align: right;
 }
 
-.tes{
-  animation-name: slidein;
+h2{
+  color: var(--primary-text-color);
+  font-size: 20vh;
+  line-height: 1;
+}
+
+.split{
+  width: 100vw;
+  max-width:100vw;
+  position: relative;
+}
+
+.split div{
+  width:100%;
+  position:absolute;
+}
+
+.slide-in-out{
+  animation-name: slidein, slideout;
   animation-fill-mode: forwards;
+  animation-delay: 1s, 6s;
+  overflow:hidden;
+}
+
+.slide-in-out2{
+      margin-left: 100%;
+    width: 0;
+    opacity: 0%;
+  animation-name: slidein, slideout;
+  animation-fill-mode: forwards;
+  animation-delay: 6.5s, 11.5s;
+  overflow:hidden;
 }
 
 @keyframes slidein {
@@ -33,30 +60,30 @@ h1{
     width: 300%;
     opacity: 0%;
   }
-
-  50%{
-    margin-left: 0%;
-    width: 100%;
-    opacity: 100%;
-  }
-  90%{
-    margin-left: 0%;
-    width: 100%;
-    opacity: 100%;
-  }
-
   to {
     margin-left: 0%;
     width: 100%;
-    opacity: 0;
+    opacity: 100%;
+  }
+}
+
+@keyframes slideout {
+  from {
+    margin-left: 0%;
+    width: 100%;
+    opacity: 100%;
+
+  }
+  to {
+    margin-left: 100%;
+    width: 0%;
+    opacity: 0%;
   }
 }
 
 .container{
   width: 100vw;
   max-width: 100vw;
-  height: 100vh;
-  max-height: 100vh;
   background-color: var(--bg-color);
 }
 
@@ -65,9 +92,21 @@ h1{
 }
 
 .intro{
-  width: min-content;
-  max-width: 100vw;
-  max-height: 100vh;
-  overflow:hidden;
-  float: right;
+  display: flex;
+}
+
+.know-more{
+  float: left;
+  z-index:10;
+  position: relative;
+}
+
+#about{
+  margin-top: 100vh;
+  height: 100vh;
+}
+
+.text{
+  width: 50ch;
+  line-height: 2;
 }
