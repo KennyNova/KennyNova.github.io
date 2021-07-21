@@ -122,10 +122,11 @@ h3::after{
   display: flex;
 }
 
-.know-more{
-  float: left;
-  z-index:10;
-  position: relative;
+.learn-more{
+
+position: absolute;
+  top:50%;
+  bottom: 50%;
 }
 
 .wave1{
@@ -146,6 +147,7 @@ h3::after{
 
 .about-desc{
   color: #665d65;
+  width:500px;
 }
 
 .button{
@@ -160,7 +162,13 @@ h3::after{
 .resume{
   border: 6px solid green;
   color: green;
+  margin-top: 50px;
+  margin-right: 10px;
+}
 
+.resume:hover{
+  border: 6px solid blue;
+  color: blue;
 }
 
 .text{
@@ -178,13 +186,25 @@ h3::after{
   background-color: #053836;
 }
 
-.title{
-  text-align: center;
+.project{
+  max-width: 30%;
+  overflow-wrap: normal;
+}
+
+.project-image-holder{
+  max-width: 35%;
+  /* max-height: 10px; */
+  /* padding: 10px; */
 }
 
 .project-image{
-  width: 35%;
-  padding: 10px;
+  width:100%;
+  overflow: hidden;
+  transition: all 0.8s ease;
+}
+
+.project-image:hover{
+  transform: scale(1.25,1.25)
 }
 
 .weather-app{
