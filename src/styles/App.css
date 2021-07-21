@@ -33,22 +33,12 @@ h2{
 }
 
 h3{
-  color: var(--primary-text-color);
+  color: #c29789;
   font-size: 10vh;
   line-height: 1;
   text-decoration: none; 
   position: relative; 
   width: fit-content;
-}
-
-h3::after{
-  content: '';
-  margin: 3px;
-  position: relative;
-  display: block;
-  height: 3px;
-  background: #60A5FA;
-  width: 100%;
 }
 
 .split{
@@ -122,8 +112,6 @@ h3::after{
 
 .learn-more{
   position: absolute;
-  /* top:75%; */
-  /* left: 30rem; */
   z-index: 1;
   border: 5px var(--secondary-text-color) solid;
   border-radius: 4px;
@@ -153,7 +141,6 @@ h3::after{
 
 .about-desc{
   color: #665d65;
-  /* width:500px; */
 }
 
 .button{
@@ -199,6 +186,34 @@ h3::after{
   margin: 2rem 0 2rem 0;
 }
 
+.project-links{
+  text-align: center;
+  margin: 2rem 0 2rem 0;
+}
+
+.live{
+  margin-right: 2rem;
+  border: 5px var(--text-highlight-color) solid;
+  border-radius: 4px;
+  transition: all .3s ease-in-out;
+}
+
+.live:hover{
+  border-color: var(--primary-text-color);
+  color: var(--text-highlight-color);
+}
+
+.source-code{
+  border: 5px var(--text-highlight-color) solid;
+  border-radius: 4px;
+  transition: all .3s ease-in-out;
+}
+
+.source-code:hover{
+  border-color: var(--primary-text-color);
+  color: var(--text-highlight-color);
+}
+
 .project{
   background-color: #053836;
   width: 100%;
@@ -222,7 +237,6 @@ h3::after{
 }
 
 .contact{
-  /* margin-top: -200px; */
   padding-bottom: 100px;
   background-color: var(--bg-color);
 }
