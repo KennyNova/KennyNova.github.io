@@ -9,7 +9,7 @@ export const splitWordAnimation = (text1, text2) => {
             <div>
             {newText1.map((word, index) => (
                 <h1 key={word}
-                    className={(index % 2 == 1) ? "slide-in-out" : "slide-in-out highlight"}
+                    className={(index % 2 === 1) ? "slide-in-out" : "slide-in-out highlight"}
                     style={{
                         animationDuration: ((index + 2) * .75) + "s"
                     }}
@@ -19,7 +19,7 @@ export const splitWordAnimation = (text1, text2) => {
             <div>
             {newText2.map((word, index) => (
                 <h1 key={word}
-                    className={(index % 2 == 1) ? "slide-in-out2" : "slide-in-out2 highlight"}
+                    className={(index % 2 === 1) ? "slide-in-out2" : "slide-in-out2 highlight"}
                     style={{
                         animationDuration: ((index + 2) * .75) + "s"
                     }}
