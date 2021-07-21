@@ -123,10 +123,18 @@ h3::after{
 }
 
 .learn-more{
-
-position: absolute;
+  position: absolute;
   top:50%;
-  bottom: 50%;
+  left: 30%;
+  z-index: 1;
+  border: 5px var(--secondary-text-color) solid;
+  border-radius: 4px;
+  transition: all .3s ease-in-out;
+}
+
+.learn-more:hover{
+  border: 5px var(--primary-text-color) solid;
+  color: var(--secondary-text-color)
 }
 
 .wave1{
@@ -187,24 +195,11 @@ position: absolute;
 }
 
 .project{
-  max-width: 30%;
-  overflow-wrap: normal;
-}
 
-.project-image-holder{
-  max-width: 35%;
-  /* max-height: 10px; */
-  /* padding: 10px; */
 }
 
 .project-image{
-  width:100%;
-  overflow: hidden;
-  transition: all 0.8s ease;
-}
-
-.project-image:hover{
-  transform: scale(1.25,1.25)
+  width:35%;
 }
 
 .weather-app{

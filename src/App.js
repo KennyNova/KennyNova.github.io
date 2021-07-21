@@ -21,19 +21,20 @@ function App() {
             about new technologies and implementing them into my day to day life. I aspire to become a Full Stack developer as I love
             working in both the frontend and backend. I am working everyday to achieve this goal by learning as much as I can and then
             using that knowledge to create apps.
-            
-            </p>
-            
+          </p>
         </div>
+       
+       
         <svg className="wave2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"  width="100vw"><path fill="#CAD2C5" fill-opacity="1" d="M0,320L80,272C160,224,320,128,480,128C640,128,800,224,960,250.7C1120,277,1280,235,1360,213.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+       
+       
           <div className="projects">
             <h2 className="mb-10 float-right">projects</h2>
+            
             <div className="weather-app">
               <a href="https://github.com/KennyNova/React-Weather-App" target="_blank" rel="noopener noreferrer">
-                <div className="project-image-holder">
-                  <img className="project-image" alt="weatherimg" src={weatherApp} />
-                </div>
-                <div className="project ">
+                <img className="project-image float-left" alt="weatherimg" src={weatherApp} />
+                <div className="project float-right">
                     <h3 className="project-title">React Weather App</h3>
                     <div className="project-desc">
                       <p className="text">
@@ -48,8 +49,8 @@ function App() {
 
             <div className="pokedex">
                 <a href="https://github.com/KennyNova/Pokedex" target="_blank" rel="noopener noreferrer"> 
-
-                  <div className="project">
+                  <img className="project-image float-right" alt="weatherimg" src={weatherApp} />
+                  <div className="project float-left">
                     <h3 className="project-title">NextJS Pokedex</h3>
                     <div className="project-desc">
                         <p className="text">
@@ -58,18 +59,13 @@ function App() {
                           code into components and how to use NextJS's way to fetch data from an api.
                         </p>
                     </div>
-              </div>
-                                <div className="project-image-holder">
-                    <img className="project-image float-right" alt="weatherimg" src={weatherApp} />
                   </div>
                 </a>
             </div>
 
             <div className="messaging-app">
                 <a href="https://github.com/KennyNova/messaging-app-socket.io" target="_blank" rel="noopener noreferrer">
-                  <div className="project-image-holder">
                     <img className="project-image float-left" alt="weatherimg" src={weatherApp} />
-                  </div>
                   <div className="project float-right">
                     <h3 className="project-title">Socket.io Messaging App</h3>
                     <div className="project-desc">
@@ -84,9 +80,7 @@ function App() {
 
             <div className="contact-app">
               <a href="https://github.com/KennyNova/new-contact-app" target="_blank" rel="noopener noreferrer">
-                <div className="project-image-holder">
                   <img className="project-image float-right" alt="weatherimg" src={weatherApp} />
-                </div>
                 <div className="project float-left">
                   <h3 className="project-title">Contact App</h3>
                   <div className="project-desc">
