@@ -1,9 +1,11 @@
 import '../styles/tailwind.css';
 import weatherApp from '../images/projects/Weather-App.PNG'
+import Pokedex from '../images/projects/Pokedex.PNG'
+import Contact from '../images/projects/Contact-App.PNG'
 
 export const Projects = (props) => {
     return (
-      <div className="projects">
+      <div className="projects md:pr-8 md:pl-8">
       <h2 className="mb-10 text-8xl md:text-9xl float-right">projects</h2>
       
       <div className="project">
@@ -24,7 +26,7 @@ export const Projects = (props) => {
       </div>
 
       <div className="project ">
-        <img className="project-image float-right w-full md:w-4/12" alt="weatherimg" src={weatherApp} />
+        <img className="project-image float-right w-full md:w-4/12" alt="weatherimg" src={Pokedex} />
         <div className="float-left">
           <h3 className="project-title">NextJS Pokedex</h3>
           <div className="project-desc">
@@ -57,7 +59,7 @@ export const Projects = (props) => {
       </div>
 
       <div className="last-project">
-        <img className="project-image float-right w-full md:w-4/12" alt="weatherimg" src={weatherApp} />
+        <img className="project-image float-right w-full md:w-4/12" alt="weatherimg" src={Contact} />
         <div className="float-left">
           <h3 className="project-title">Contact App</h3>
           <div className="project-desc">

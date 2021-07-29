@@ -4,7 +4,7 @@ import resume from '../other/Navid_M_Resume.docx.pdf';
 export const Aboutme = (props) => {
 
     return (
-        <div className="about-me">
+        <div className="about-me md:pr-8 md:pl-8">
           <h2 className="text-9xl md:text-9xl">about me</h2>
           <a className="button resume float-right" href={resume} target="_blank">resume</a>
           <p className="text about-desc">

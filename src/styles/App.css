@@ -62,7 +62,7 @@ h3{
 .slide-in-out2{
       margin-left: 100%;
     width: 0;
-    opacity: 0%;
+    /* opacity: 0%; */
   animation-name: slidein, slideout;
   animation-fill-mode: forwards;
   animation-delay: 6.5s, 11.5s;
@@ -73,12 +73,12 @@ h3{
   from {
     margin-left: 100%;
     width: 300%;
-    opacity: 0%;
+    /* opacity: 0%; */
   }
   to {
     margin-left: 0%;
     width: 100%;
-    opacity: 100%;
+    /* opacity: 100%; */
   }
 }
 
@@ -86,13 +86,13 @@ h3{
   from {
     margin-left: 0%;
     width: 100%;
-    opacity: 100%;
+    /* opacity: 100%; */
 
   }
   to {
     margin-left: 100%;
     width: 0%;
-    opacity: 0%;
+    /* opacity: 0%; */
   }
 }
 
@@ -137,6 +137,7 @@ h3{
   width: 100%;
   height: fit-content;
   overflow: auto;
+  /* padding: 0 5rem 0 5rem; */
 }
 
 .about-desc{
