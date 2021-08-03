@@ -1,6 +1,7 @@
 import '../styles/tailwind.css';
 import weatherApp from '../images/projects/Weather-App.PNG'
 import Pokedex from '../images/projects/Pokedex.PNG'
+import Message from '../images/projects/Message-App.PNG'
 import Contact from '../images/projects/Contact-App.PNG'
 
 export const Projects = (props) => {
@@ -43,7 +44,7 @@ export const Projects = (props) => {
       </div>
 
       <div className="project">
-        <img className="project-image float-left w-full md:w-4/12" alt="weatherimg" src={weatherApp} />
+        <img className="project-image float-left w-full md:w-4/12" alt="weatherimg" src={Message} />
         <div className="float-right">
           <h3 className="project-title">Socket.io Messaging App</h3>
           <div className="project-desc">
