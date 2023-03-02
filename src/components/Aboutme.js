@@ -1,0 +1,24 @@
+import '../styles/tailwind.css';
+import resume from '../other/Navid_M_Resume.docx.pdf';
+
+export const Aboutme = (props) => {
+
+    return (
+        <div className="about-me md:pr-8 md:pl-8 pointer-events-none">
+          <h2 className="text-9xl md:text-9xl">about me</h2>
+          <a className="button resume float-right pointer-events-auto" href={resume} rel="noreferrer"
+           target="_blank">resume</a>
+          <p className="text about-desc">
+          Hey there,<br></br><br></br>
+
+I'm Navid Madani, a computer science student at Georgia State University. I've always been fascinated by new technologies and how they can be used in our daily lives. That's why I'm studying CS - I want to turn my interest into a career.
+<br></br>
+<br></br>
+Specifically, I'm interested in becoming a Full Stack Developer. I love working on both the frontend and backend of web applications, and I find it incredibly satisfying to see a project come to life. To achieve my goal, I'm constantly learning as much as I can and experimenting with new ideas.
+<br></br>
+<br></br>
+Ultimately, I want to use my knowledge and skills to create innovative applications that solve real-world problems.
+          </p>
+        </div>
+    )
+}
