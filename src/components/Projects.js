@@ -84,10 +84,10 @@ export function Projects(props) {
               {isOpen[index] ? "Close" : "Read More"}
             </button>
             <div>
-          <div className={`project-desc inline-block overflow-hidden w-1/2 ${ isOpen[index] ? " h-96" : "h-0"}`}  >
+          <div className={`project-desc inline-block overflow-hidden w-1/2 ${ isOpen[index] ? " h-96 " : "h-0"}`}  >
             {project.desc}
             </div>
-            <img className="project-image float-right w-1/2 md:w-6/12" alt="weatherimg" src={project.image} />
+            <img className={`project-image float-right ${isOpen[index] ? ' w-1/2 md:w-6/12 notgray' : 'w-1/4 md:w-1/4 gray'} `} alt="weatherimg" src={project.image} />
           </div>
           <div className="project-links pointer-events-auto">
             <a
