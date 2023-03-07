@@ -1,5 +1,4 @@
 import '../styles/tailwind.css';
-import resume from '../other/Navid_M_Resume.docx.pdf';
 
 export const Aboutme = (props) => {
 

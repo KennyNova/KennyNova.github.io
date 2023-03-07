@@ -1,10 +1,7 @@
 import { useState } from "react";
-import weatherApp from '../images/projects/Weather-App.PNG'
-import Pokedex from '../images/projects/Pokedex.PNG'
-import Message from '../images/projects/Message-App.PNG'
-import Contact from '../images/projects/Contact-App.PNG'
+import { Transition } from "@headlessui/react";
 
-export function Projects(props) {
+function Projects() {
   const [isOpen, setIsOpen] = useState({});
 
   function toggleDescription(index) {
@@ -28,7 +25,6 @@ export function Projects(props) {
        `,
       liveLink: "https://react-weather-app-bay-six.vercel.app/",
       codeLink: "https://github.com/KennyNova/React-Weather-App",
-      image: weatherApp
     },
     {
       title: "NextJS Pokedex",
@@ -44,7 +40,6 @@ export function Projects(props) {
        `,
       liveLink: "https://pokedex-ten-beta.vercel.app/",
       codeLink: "https://github.com/KennyNova/Pokedex",
-      image: Pokedex
     },
     {
         title: "Socket.io App",
@@ -57,7 +52,6 @@ export function Projects(props) {
                 up. I also learned how to host the app in the cloud using a docker container, which was a new experience for me.
            `,
         codeLink: "https://github.com/KennyNova/messaging-app-socket.io",
-        image: Message
     },
     {
         title: "Contact App",
@@ -68,26 +62,32 @@ export function Projects(props) {
              features.`,
         liveLink: "https://new-contact-app.vercel.app/",
         codeLink: "https://github.com/KennyNova/new-contact-app",
-        image: Contact
     },
   ];
 
   return (
-    <div className="projects md:pr-8 md:pl-8">
+    <div>
       {projectData.map((project, index) => (
         <div className="project" key={index}>
           <h3 className="project-title">{project.title}</h3>
-          <button
+          <div className="project-desc">
+            <Transition
+              show={isOpen[index]}
+              enter="transition-opacity duration-500"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="transition-opacity duration-500"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <p className="text">{project.desc}</p>
+            </Transition>
+            <button
               className="text-blue-500 mt-2 focus:outline-none"
               onClick={() => toggleDescription(index)}
             >
               {isOpen[index] ? "Close" : "Read More"}
             </button>
-            <div>
-          <div className={`project-desc inline-block overflow-hidden w-1/2 ${ isOpen[index] ? " h-96" : "h-0"}`}  >
-            {project.desc}
-            </div>
-            <img className="project-image float-right w-1/2 md:w-6/12" alt="weatherimg" src={project.image} />
           </div>
           <div className="project-links pointer-events-auto">
             <a

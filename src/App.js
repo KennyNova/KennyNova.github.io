@@ -16,10 +16,7 @@ function App() {
       setScrollPercentage(
         temp
       );      
-      console.log(temp)
     };
-
-    
 
     window.addEventListener("scroll", handleScroll);
 
@@ -86,7 +83,7 @@ function App() {
         <svg
           style={{
             transition: "transform 1s ease-out",
-            transform: `translateX(${-(Math.min(-scrollPercentage, 50)+50)}%) `,
+            transform: `translateX(${-(Math.min(-scrollPercentage, 170)+70)}%) `,
           }}
           
           className="wave2"
@@ -106,7 +103,7 @@ function App() {
         <svg
           style={{
             transition: "transform 1s ease-out",
-            transform: `translateX(${-(Math.min(scrollPercentage, 90))+80}%) `,
+            transform: `translateX(${-(Math.min(scrollPercentage, 90))+60}%) `,
           }}
           className="wave3"
           xmlns="http://www.w3.org/2000/svg"
