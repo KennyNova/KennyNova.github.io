@@ -1,25 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.c6e666ee.chunk.css",
-    "main.js": "/static/js/main.42ce003d.chunk.js",
-    "main.js.map": "/static/js/main.42ce003d.chunk.js.map",
+    "main.css": "/static/css/main.959ad0b3.chunk.css",
+    "main.js": "/static/js/main.2f621ade.chunk.js",
+    "main.js.map": "/static/js/main.2f621ade.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0599fe77.js",
     "runtime-main.js.map": "/static/js/runtime-main.0599fe77.js.map",
-    "static/js/2.33b3df85.chunk.js": "/static/js/2.33b3df85.chunk.js",
-    "static/js/2.33b3df85.chunk.js.map": "/static/js/2.33b3df85.chunk.js.map",
+    "static/js/2.ce333e85.chunk.js": "/static/js/2.ce333e85.chunk.js",
+    "static/js/2.ce333e85.chunk.js.map": "/static/js/2.ce333e85.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.c6e666ee.chunk.css.map": "/static/css/main.c6e666ee.chunk.css.map",
-    "static/js/2.33b3df85.chunk.js.LICENSE.txt": "/static/js/2.33b3df85.chunk.js.LICENSE.txt",
+    "static/css/main.959ad0b3.chunk.css.map": "/static/css/main.959ad0b3.chunk.css.map",
+    "static/js/2.ce333e85.chunk.js.LICENSE.txt": "/static/js/2.ce333e85.chunk.js.LICENSE.txt",
     "static/media/Contact-App.6e503bf5.PNG": "/static/media/Contact-App.6e503bf5.PNG",
     "static/media/Message-App.8a23a70d.PNG": "/static/media/Message-App.8a23a70d.PNG",
-    "static/media/Navid_M_Resume.docx.322b28d3.pdf": "/static/media/Navid_M_Resume.docx.322b28d3.pdf",
     "static/media/Pokedex.87abd375.PNG": "/static/media/Pokedex.87abd375.PNG",
     "static/media/Weather-App.2b1d5f6e.PNG": "/static/media/Weather-App.2b1d5f6e.PNG"
   },
   "entrypoints": [
     "static/js/runtime-main.0599fe77.js",
-    "static/js/2.33b3df85.chunk.js",
-    "static/css/main.c6e666ee.chunk.css",
-    "static/js/main.42ce003d.chunk.js"
+    "static/js/2.ce333e85.chunk.js",
+    "static/css/main.959ad0b3.chunk.css",
+    "static/js/main.2f621ade.chunk.js"
   ]
 }
