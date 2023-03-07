@@ -4,11 +4,11 @@ import resume from '../other/Navid_M_Resume.docx.pdf';
 export const Aboutme = (props) => {
 
     return (
-        <div className="about-me md:pr-8 md:pl-8 pointer-events-none">
-          <h2 className="text-9xl md:text-9xl">about me</h2>
-          <a className="button resume float-right pointer-events-auto" href={resume} rel="noreferrer"
+        <div className="about-me md:pr-8 md:pl-8 ">
+          <h2 className="text-9xl md:text-9xl text-center capitalize mb-11 pointer-events-none">about me</h2>
+          <a className="button resume float-right" href="https://docs.google.com/document/d/12gK4zaAYeMd1x50HuJNvBcyTzNwWNDXq/edit?usp=sharing&ouid=111832137089279409929&rtpof=true&sd=true" rel="noreferrer"
            target="_blank">resume</a>
-          <p className="text about-desc">
+          <p className="text about-desc pointer-events-none">
           Hey there,<br></br><br></br>
 
 I'm Navid Madani, a computer science student at Georgia State University. I've always been fascinated by new technologies and how they can be used in our daily lives. That's why I'm studying CS - I want to turn my interest into a career.

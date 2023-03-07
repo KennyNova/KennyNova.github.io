@@ -192,20 +192,6 @@ h3{
   width: 200vw;
 }
 
-.projects{
-  background-color: #053836;
-}
-
-.project-image{
-  box-shadow: 5px 5px 20px black;
-  margin: 2rem 0 2rem 0;
-}
-
-.project-links{
-  text-align: center;
-  margin: 2rem 0 2rem 0;
-}
-
 .live{
   margin-right: 2rem;
   border: 5px var(--text-highlight-color) solid;
@@ -227,6 +213,24 @@ h3{
 .source-code:hover{
   border-color: var(--primary-text-color);
   color: var(--text-highlight-color);
+}
+
+.projects{
+  background-color: #053836;
+}
+
+.project-image{
+  box-shadow: 5px 5px 20px black;
+  margin: 2rem 0 2rem 0;
+}
+
+.project-desc{
+  width: 18 rem;
+}
+
+.project-links{
+  text-align: center;
+  margin: 2rem 0 2rem 0;
 }
 
 .project{

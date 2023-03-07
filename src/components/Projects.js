@@ -7,13 +7,13 @@ import Contact from '../images/projects/Contact-App.PNG'
 export const Projects = (props) => {
     return (
       <div className="projects md:pr-8 md:pl-8 pointer-events-none">
-      <h2 className="mb-10 text-8xl md:text-9xl float-right">projects</h2>
+      <h2 className=" text-8xl md:text-9xl  text-center capitalize mb-11">projects</h2>
       
       <div className="project">
-        <img className="project-image float-left w-full md:w-6/12" alt="weatherimg" src={weatherApp} />
+        <img className="project-image float-left w-72 md:w-6/12" alt="weatherimg" src={weatherApp} />
         <div className="float-right">
             <h3 className="project-title">React Weather App</h3>
-            <div className="project-desc">
+            <div className="project-desc w-72 ">
               <p className="text">
               I recently built a weather app using React, which was a great learning experience for me. My primary goal was to
                understand how to access and implement an API. After reading OpenWeather's WeatherAPI documentation, I used the
@@ -75,7 +75,7 @@ export const Projects = (props) => {
       <div className="last-project pointer-events-none">
         <img className="project-image float-right w-full md:w-6/12" alt="weatherimg" src={Contact} />
         <div className="float-left">
-          <h3 className="project-title">Contact App</h3>
+          <h3 className="project-title ">Contact App</h3>
           <div className="project-desc">
             <p className="text">
             This contact app was one of my first projects, and it served as a great introduction to React and its hooks. Using the useState hook,
