@@ -167,6 +167,15 @@ h3{
   color: var(--secondary-text-color);
 }
 
+.resume-image{
+  filter: blur(4px);
+  transition: all .4s ease-in-out;
+}
+
+.resume-image:hover{
+  filter: blur(0px);
+}
+
 .text{
   max-width: 75ch;
   font-size: 1.5rem;
