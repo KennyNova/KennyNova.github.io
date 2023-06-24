@@ -4,15 +4,21 @@ import {useState} from 'react';
 
 export const Aboutme = (props) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [showForm, setShowForm] = useState(false);
 
   const handleMouseEnter = () => {
     setIsHovered(true);
-    console.log("hi")
   };
 
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
+
+  const form = (e) => {
+    e.preventDefault()
+    setShowForm(!showForm)
+  }
+
     return (
 
 
@@ -23,20 +29,20 @@ export const Aboutme = (props) => {
           </a> */}
 
 
-          <div className="relative group">
+          <div className="cursor-pointer float-right relative group w-1/2 md:w-4/12">
             <img
               src={resume}
-              alt="Image"
-              className="resume-image w-1/2 md:w-4/12"
+              alt="resume"
+              className="resume-image "
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             />
             {isHovered && (
-              <div className="absolute h-1/2 w-1/2 inset-0 flex items-center justify-center bg-gray-800 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-30 pointer-events-none">
-              <div className="p-2 text-center">
+              <a className="button absolute inset-0 flex items-center justify-center bg-gray-800  opacity-0 transition-opacity duration-300 group-hover:opacity-30 pointer-events-none" onClick={e => form(e)}>
+              <div className="p-2 text-white text-center">
                 Click to Request Resume
               </div>
-            </div>
+            </a>
             )}
           </div>
 
