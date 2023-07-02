@@ -19,13 +19,17 @@ body{
   padding:0px;
   opacity: 50px;
   background-image: linear-gradient(to right, white,0px , transparent 70%);
+  cursor: pointer;
+  transition: all 2s cubic-bezier(.12,.6,.57,1.04);
+  transition-delay: 300ms;
 }
 
 .word:hover{
   color:white;
   background-image: linear-gradient(to right, white,20px , transparent 70%);
   background-position: 20%;
-  transition: all .5s ease-in-out;
+  transition: all 1s cubic-bezier(.12,.6,.57,1.04);
+  transition-delay: 0ms;
 }
 
 .letter{
@@ -36,5 +40,6 @@ body{
 
 .letter:hover{
   color:white;
+  
 }
 
