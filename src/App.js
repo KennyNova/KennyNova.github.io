@@ -21,7 +21,7 @@ function App() {
           <MenuItem text="Album"></MenuItem>
         </a>
         <a>
-          <MenuItem text="ex"></MenuItem>
+          <MenuItem text="Blog"></MenuItem>
         </a>
       </div>
 

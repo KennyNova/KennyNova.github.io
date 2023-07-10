@@ -1,41 +1,64 @@
-:root{
-  --bg-color: #142129;
-  --primary-text-color: #F7DAD9;
-  --secondary-text-color: #0B7A75;
-  --text-highlight-color: #957FEF;
+:root {
+  --bg-color-default: #142129;
+  --primary-text-color-default: #F7DAD9;
+  --secondary-text-color-default: #0B7A75;
+  --text-highlight-color-default: #957FEF;
+
+  --bg-color-dark: #101314;
+  --primary-text-color-dark: #FFFFFF;
+  --secondary-text-color-dark: #0B7A75;
+  --text-highlight-color-dark: #957FEF;
+
+  --bg-color-light: #FFFFFF;
+  --primary-text-color-light: #000000;
+  --secondary-text-color-light: #0B7A75;
+  --text-highlight-color-light: #957FEF;
 }
 
 body{
-  background-color: #101314;
+  background-color: var(--bg-color-default);
   width: 100vw;
 }
 
 .list{
-  font-size: 10rem; /* 128px */
-  line-height: 1.5  ;
+  /* font-size: 10rem; /* 128px */
 }
 
 .word{
-  padding:0px;
+  color: var(--primary-text-color-default);
+  padding:10px;
+  margin: auto;
   opacity: 50px;
-  background-image: linear-gradient(to right, white,0px , transparent 70%);
   cursor: pointer;
-  transition: all 2s cubic-bezier(.12,.6,.57,1.04);
+  transition: all .3s cubic-bezier(.12,.6,.57,1.04);
   transition-delay: 300ms;
 }
 
 .word:hover{
-  color:white;
-  background-image: linear-gradient(to right, white,20px , transparent 70%);
+  color: var(--secondary-text-color-default);
+  background-image: linear-gradient(180deg, transparent,20px , rgba(255, 255, 255, 0.349) 90%);
   background-position: 20%;
-  transition: all 1s cubic-bezier(.12,.6,.57,1.04);
+  /* transition: background-position 1s cubic-bezier(.12,.6,.57,1.04); */
   transition-delay: 0ms;
 }
 
 .letter{
-  padding:20px;
+  color: var(--secondary-text-color-default);
+  padding:1rem;
   opacity: 50px;
   transition: all .2s cubic-bezier(.29,.91,.92,.11);
+  animation: pulsingAnimation 7s infinite alternate;
+}
+
+@keyframes pulsingAnimation {
+  100% {
+    /* opacity: .6; */
+    color: var(--primary-text-color-default);
+  }
+  0% {
+    /* opacity: 1; */
+    color: var(--secondary-text-color-default);
+  }
 }
 
 .letter:hover{

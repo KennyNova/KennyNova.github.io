@@ -19,11 +19,19 @@ export const MenuItem = (props) => {
     setMenuItem(letterObj);
   }, [props.text]);
 
+  const getRandomDelay = () => {
+    const minDelay = 0;
+    const maxDelay = 5;
+    console.log(Math.random() * (maxDelay - minDelay + 1) + minDelay + 's')
+    return Math.floor(Math.random() * (maxDelay - minDelay + 1) + minDelay) + 's';
+  
+  };
+
     return (
-        <div>
-        <h1 className="word">
+        <div className="">
+        <h1 className="word text-xl h-10 w-min">
           {Object.values(menuItem).map((menuItem, index) => (
-            <span className="letter" key={index}>{menuItem}</span>
+            <span className="letter" key={index} style={{ animationDelay:  getRandomDelay() }}>{menuItem}</span>
           ))}
         </h1>
       </div>
