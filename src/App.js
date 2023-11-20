@@ -82,7 +82,7 @@ function App() {
 
         <svg
           style={{
-            transition: "transform 1s ease-out",
+            transition: scrollPercentage > 40 & scrollPercentage < 60 ? 'transform 1s ease-out' : 'none',
             transform: `translateX(${-(Math.min(-scrollPercentage, 170)+70)}%) `,
           }}
           
@@ -94,6 +94,7 @@ function App() {
           <path
             fill="#CAD2C5"
             fill-opacity="1"
+            transform="scale(2, 1)"
             d="M0,320L80,272C160,224,320,128,480,128C640,128,800,224,960,250.7C1120,277,1280,235,1360,213.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
           ></path>
         </svg>
@@ -102,7 +103,7 @@ function App() {
 
         <svg
           style={{
-            transition: "transform 1s ease-out",
+            transition: scrollPercentage > 40  ? 'transform 1s ease-out' : 'none',
             transform: `translateX(${-(Math.min(scrollPercentage, 90))+60}%) `,
           }}
           className="wave3"
