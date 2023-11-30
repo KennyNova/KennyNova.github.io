@@ -43,6 +43,10 @@ h3{
   pointer-events: none;
 }
 
+label{
+  color: rgb(216, 42, 68)
+}
+
 .scroll-animation {
   transition: all 3s ease-out;
 }
@@ -110,10 +114,6 @@ h3{
 
 .highlight{
   color: var(--text-highlight-color);
-}
-
-.intro{
-  /* display: flex; */
 }
 
 .learn-more{
@@ -246,7 +246,7 @@ h3{
 .project{
   background-color: #053836;
   width: 100%;
-  height: fit-content;
+  /* height: fit-content; */
   overflow: auto;
   box-shadow:  0 4px 5px -2px black;
   /* margin-bottom: 2rem; */

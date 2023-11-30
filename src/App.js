@@ -82,8 +82,8 @@ function App() {
 
         <svg
           style={{
-            transition: scrollPercentage > 40 & scrollPercentage < 60 ? 'transform 1s ease-out' : 'none',
-            transform: `translateX(${-(Math.min(-scrollPercentage, 170)+70)}%) `,
+            transition: scrollPercentage > 40 & scrollPercentage < 75 ? 'transform 1s ease-out' : 'none',
+            transform: scrollPercentage > 40 & scrollPercentage < 75 ? `translateX(${-(Math.min(-scrollPercentage, 170)+70)}%) ` : 'none',
           }}
           
           className="wave2"
@@ -103,8 +103,8 @@ function App() {
 
         <svg
           style={{
-            transition: scrollPercentage > 40  ? 'transform 1s ease-out' : 'none',
-            transform: `translateX(${-(Math.min(scrollPercentage, 90))+60}%) `,
+            transition: scrollPercentage > 70  ? 'transform 1s ease-out' : 'none',
+            transform: scrollPercentage > 70  ? `translateX(${-(Math.min(scrollPercentage, 90))+60}%) ` : 'none',
           }}
           className="wave3"
           xmlns="http://www.w3.org/2000/svg"

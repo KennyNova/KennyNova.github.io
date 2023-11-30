@@ -73,42 +73,56 @@ export function Projects(props) {
   ];
 
   return (
-    <div className="projects md:pr-8 md:pl-8">
-      {projectData.map((project, index) => (
-        <div className="project" key={index}>
-          <h3 className="project-title">{project.title}</h3>
-          <button
-              className="text-blue-500 mt-2 focus:outline-none"
-              onClick={() => toggleDescription(index)}
-            >
-              {isOpen[index] ? "Close" : "Read More"}
-            </button>
-            <div>
-          <div className={`project-desc inline-block overflow-hidden w-1/2 ${ isOpen[index] ? " h-96 " : "h-0"}`}  >
-            {project.desc}
-            </div>
-            <img className={`project-image float-right ${isOpen[index] ? ' w-1/2 md:w-6/12 notgray' : 'w-1/4 md:w-1/4 gray'} `} alt="weatherimg" src={project.image} />
-          </div>
-          <div className="project-links pointer-events-auto">
-            <a
-              className="button live"
-              href={project.liveLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live
-            </a>
-            <a
-              className="button source-code"
-              href={project.codeLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Source Code
-            </a>
-          </div>
+  <div className="projects md:pr-8 md:pl-8 grid grid-cols-2 gap-4">
+  {projectData.map((project, index) => (
+    <div className="project min-h-full max-h-96" key={index}>
+      <h3 className="">{project.title}</h3>
+      <button
+        className="text-blue-500 mt-2 focus:outline-none"
+        onClick={() => toggleDescription(index)}
+      >
+        {isOpen[index] ? "Close" : "Read More"}
+      </button>
+      <div className="flex flex-wrap items-start">
+        <div
+          className={`project-desc overflow-y-auto ${
+            isOpen[index] ? "h-48" : "h-0"
+          } w-full md:w-1/2`}
+        >
+          {project.desc}
         </div>
-      ))}
+        <img
+          className={`project-image ${
+            isOpen[index]
+              ? "w-1/2 md:w-6/12 notgray"
+              : "w-1/4 md:w-1/4 gray"
+          }`}
+          alt="weatherimg"
+          src={project.image}
+        />
+      </div>
+      <div className="project-links pointer-events-auto mt-4">
+        <a
+          className="button live"
+          href={project.liveLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Live
+        </a>
+        <a
+          className="button source-code"
+          href={project.codeLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Source Code
+        </a>
+      </div>
     </div>
+  ))}
+</div>
+
+
   );
 }
